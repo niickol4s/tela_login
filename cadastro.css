@@ -1,0 +1,106 @@
+:root {
+    --Color1: rgb(241, 239, 247);
+    --Color2: rgb(60, 58, 65);
+    --Color3: rgb(43, 40, 52);
+    --Color4: rgb(239, 68, 242);
+    --Color5: rgb(113, 62, 230);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body,
+  html {
+    background-color: var(--Color2);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--Color1);
+  }
+
+  h2,
+  a {
+    color: var(--Color4);
+    text-decoration: none;
+  }
+
+  section.area-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: var(--Color3);
+    height: 480px;
+    width: 580px;
+    border-radius: 5px;
+  }
+  
+  div.login form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .form-camps {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.form-camp {
+  display: flex;
+  flex-direction: column;
+}
+
+  div.login input {
+    padding-left: 10px;
+    background-color: var(--Color2);
+    border: 1px solid var(--Color4);
+    border-radius: 5px;
+    color: var(--Color1);
+    margin: 10px 0 10px 0;
+    height: 35px;
+    outline: none;
+  }
+
+  input::placeholder {
+    color: var(--Color1);
+  }
+
+  input#login-button {
+    background-color: var(--Color4);
+    color: var(--Color3);
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  div input.btn-cadastro {
+    background-color: var(--Color3);
+  }
+
+  button {
+    background-color: var(--Color3);
+    border: 1px solid var(--Color4);
+    color: var(--Color4);
+    font-weight: bold;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px 0 10px 0;
+    cursor: pointer;
+  }
+
+  .btn-cadastro {
+    padding: 10px 10px 10px 10px;
+  }

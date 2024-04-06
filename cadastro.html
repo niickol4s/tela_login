@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="cadastro.css" />
+    <title>Tela de Cadastro</title>
+  </head>
+  <body>
+    <section class="area-login">
+      <div class="login">
+        <h2>Cadastro</h2>
+
+        <form method="post">
+          <div class="form-camps">
+            <div class="form-camp">
+              <label for="nome">Nome Completo</label>
+              <input
+                type="text"
+                name="nome"
+                id="nome"
+                placeholder="Nome Completo"
+                required
+              />
+            </div>
+
+            <div class="form-camp">
+              <label for="cpf">CPF</label>
+              <input
+                type="text"
+                id="cpf"
+                name="cpf"
+                placeholder="000.000.000-00"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-camps">
+            <div class="form-camp">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+
+            <div class="form-camp">
+              <label for="telefone">Telefone</label>
+              <input
+                type="tel"
+                id="telefone"
+                name="telefone"
+                placeholder="(00) 0000-0000"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-camps">
+            <div class="form-camp">
+              <label for="endereco">Endereço</label>
+              <input
+                type="text"
+                name="endereco"
+                id="endereco"
+                placeholder="Endereço"
+                required
+              />
+            </div>
+
+            <div class="form-camp">
+              <label for="uf">UF</label>
+              <input
+                type="text"
+                id="uf"
+                name="uf"
+                placeholder="UF"
+                maxlength="2"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-camps">
+            <div class="form-camp">
+              <label for="ncartao">N° do Cartão</label>
+              <input
+                type="text"
+                name="ncartao"
+                id="ncartao"
+                placeholder="0000 0000 0000 0000"
+                required
+              />
+            </div>
+
+            <div class="form-camp">
+              <label for="validade">Validade do Cartão</label>
+              <input
+                type="text"
+                id="validade"
+                name="validade"
+                placeholder="MM/AA"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-camps">
+            <div class="form-camp">
+              <label for="senha">Senha de Cadastro</label>
+              <input
+                type="password"
+                name="senha"
+                id="senha"
+                placeholder="Senha"
+                required
+              />
+            </div>
+
+            <div class="btn-camp">
+              <input type="reset" value="Limpar" class="btn-cadastro" />
+              <input
+                onclick="abrirLogin()"
+                type="submit"
+                value="Cadastrar"
+                id="login-button"
+                class="btn-cadastro"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+
+  <script>
+    function abrirLogin() {
+        window.location.href = "login.html";
+    }
+  </script>
+</html>
